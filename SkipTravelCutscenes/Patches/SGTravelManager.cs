@@ -1,6 +1,5 @@
 ﻿using BattleTech;
 using Harmony;
-using System.Reflection;
 
 namespace SkipTravelCutscenes
 {
@@ -10,15 +9,6 @@ namespace SkipTravelCutscenes
         public static void Postfix(SGTravelManager __instance)
         {
             __instance.AnimationInterrupt();
-        }
-    }
-
-    public static class Patches
-    {
-        public static void Init(string modDir, string modSettings)
-        {
-            var harmony = HarmonyInstance.Create("io.github.mpstark.SkipTravelCutscenes");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
 }
