@@ -1,7 +1,10 @@
 ﻿using BattleTech;
 using Harmony;
 
-namespace SkipTravelCutscenes
+// ReSharper disable InconsistentNaming
+// ReSharper disable UnusedMember.Global
+
+namespace SkipTravelCutscenes.Patches
 {
     [HarmonyPatch(typeof(SGTravelManager), "BeginTransferAnim")]
     public static class SGTravelManager_BeginTransferAnim_Patch
