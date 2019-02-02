@@ -14,4 +14,15 @@ namespace SkipTravelCutscenes.Patches
             __instance.AnimationInterrupt();
         }
     }
+
+    [HarmonyPatch(typeof(SGTravelManager), "ReturnFromTransferAnim")]
+    public static class SGTravelManager_ReturnFromTransferAnim_Patch
+    {
+        public static void Postfix(SGTravelManager __instance)
+        {
+            var animCounter = Traverse.Create(__instance).Field("jumpshipChargeAndLeaveAnimCounter").GetValue<int>();
+            if (animCounter == 1)
+                __instance.AnimationInterrupt();
+        }
+    }
 }

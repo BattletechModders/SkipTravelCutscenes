@@ -1,6 +1,8 @@
 ﻿using Harmony;
 using System.Reflection;
 
+// ReSharper disable UnusedMember.Global
+
 namespace SkipTravelCutscenes
 {
     public static class Main
