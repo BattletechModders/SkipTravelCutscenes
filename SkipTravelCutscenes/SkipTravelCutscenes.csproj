@@ -49,13 +49,11 @@
     <Reference Include="UnityEngine">
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\BATTLETECH\BattleTech_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    <Reference Include="UnityEngine.AnimationModule">
+      <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\BATTLETECH\BattleTech_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="UnityEngine.CoreModule">
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
